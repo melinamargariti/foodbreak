@@ -14,7 +14,7 @@ public class Main {
         try {
             // Presentations check
             System.out.println("Give number of presentations. " +
-                    "(Integer, 1<=N<=10^5");
+                    "(Integer, 1<=N<=10^5):");
 
             presentations = scanner.nextInt();
 
@@ -24,7 +24,7 @@ public class Main {
 
             // Length check
             System.out.println("Give length of day, in time units." +
-                    "(Integer, 1<=T<=10^9");
+                    "(Integer, 1<=T<=10^9):");
 
             length = scanner.nextInt();
 
@@ -85,13 +85,7 @@ public class Main {
         Arrays.sort(arr, 1, arr.length,
                 Comparator.comparingInt(row -> row[0]));
 
-        for (int[] i : arr) {
-            for (int j : i) {
-                System.out.print(j + " ");
-            }
-            System.out.println();
-        }
-        System.out.println();
+
 
         // Finding the biggest gap
         // caution: first gap, overlaps, last gap
